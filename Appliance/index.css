@@ -8,15 +8,17 @@
     --color2: #ff9900;
     --color3: #313133;
     --color4: #ffffff;
-    --color5: #4B158D;
+    --color5: #000000;
     --spacing-sm: 20px;
     --spacing-xm: 5px;
     --spacing-xx: 12px;
-    --spacing-m: 15.4px;
+    --spacing-m: 15px;
     --spacing-r: 19.6px;
     --spacing-u: 13px;
     --spacing-l: 12px;
-    --spacing-p: 10px
+    --spacing-p: 10px;
+    --spacing-h: 7px;
+    --spacing-k: 6px;
 }
 body{
     background-color: rgba(128, 128, 128, 0.151)
@@ -40,7 +42,6 @@ section{
     border-radius: var(--spacing-xm);
     padding: 6px 6px;
 }
-
 .div-A h3{
     text-align: center;
     font-weight: bold;
@@ -60,7 +61,7 @@ section{
 .div-C1{
     display: flex;
     justify-content: space-around;
-    background-color: var(--color5) ;
+    background-color: var(--color5);
     gap: 900px;
     color: var(--color4);
     padding: 10px 0px;
@@ -72,13 +73,13 @@ section{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap: var(--spacing-p);
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     padding: 4px 0px;
 }
 .spa img{
-    height: 15px;
-    width: 15px; 
+    height: var(--spacing-m);
+    width: var(--spacing-m); 
 }
 .spa a{
     color: var(--color);
@@ -91,7 +92,9 @@ section{
 }
 .div-C2{
     display: flex;
-    gap: var(--spacing-xx);
+    gap: var(--spacing-h);
+    height: 320px;
+    padding: var(--spacing-k);
 }
 .div-C21{
     background-image: url(./skyrun.jpg);
@@ -138,12 +141,299 @@ section{
 .holder{
     height: 300px;
     background-color: var(--color4);
+    transition: transform 0.3 ease;
+    object-fit: cover;
+}
+.holder:hover{
+    transform: scale(1.02);
+    box-shadow: 0 0 10px rgba(0, 0, 0,0.1);
 }
 .div-text{
     padding:var(--spacing-p);
 }
 .div-text p{
     font-size: 0.9rem;
+}
+.div-D1{
+    background-color: var(--color2);
+    text-align: center;
+    border-top-left-radius: var(--spacing-xm);
+    border-top-right-radius: var(--spacing-xm);
+    padding: var(--spacing-p) 0px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: var(--spacing-sm);
+    font-weight: bold;
+}
+.div-D2{
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--color4);
+    padding-top: var(--spacing-u);
+    padding-bottom: var(--spacing-u);
+    border-bottom-left-radius: var(--spacing-xm);
+    border-bottom-right-radius: var(--spacing-xm);
+}
+.flex-column{
+    display: flex;
+    gap: var(--spacing-p);
+}
+.div-D2 div{
+    height: 110px;
+    width: 600px;
+    border-radius: var(--spacing-xm);
+}
+.div-D21{
+    background-image: url(./hisense_260x144.png);
+    background-size: cover;
+    box-shadow: 0 0 10px rgba(0, 0, 0,0.1);
+    transition: transform 0.3 ease;
+}
+.div-D21:hover{
+    transform: scale(1.06);
+}
+.div-D22{
+    background-image: url(./ecoflow.jpg);
+    background-size: cover;
+    box-shadow: 0 0 10px rgba(0, 0, 0,0.1);
+    transition: transform 0.3 ease;
+}
+.div-D22:hover{
+    transform: scale(1.06);
+}
+.div-D23{
+    background-image: url(./nexus_260x144.png);
+    background-size: cover;
+    box-shadow: 0 0 10px rgba(0, 0, 0,0.1);
+    transition: transform 0.3 ease;
+}
+.div-D23:hover{
+    transform: scale(1.06);
+}
+.div-D24{
+    background-image: url(./haier-thermocool_260x144.png);
+    background-size: cover;
+    box-shadow: 0 0 10px rgba(0, 0, 0,0.1);
+    transition: transform 0.3 ease;
+}
+.div-D24:hover{
+    transform: scale(1.06);
+}
+.div-D25{
+    background-image: url(./binatone_260x144.png);
+    background-size: cover;
+    box-shadow: 0 0 10px rgba(0, 0, 0,0.1);
+    transition: transform 0.3 ease;
+}
+.div-D25:hover{
+    transform: scale(1.06);
+}
+.div-D26{
+    background-image: url(./ROYAL.jpg);
+    background-size: cover;
+    box-shadow: 0 0 10px rgba(0, 0, 0,0.1);
+    transition: transform 0.3 ease;
+}
+.div-D26:hover{
+    transform: scale(1.06);
+}
+.div-E1{
+    background-color: var(--color5);
+    padding: 13px 0px;
+    border-top-left-radius: var(--spacing-xm);
+    border-top-right-radius: var(--spacing-xm);
+}
+.div-E1 p{
+    color: var(--color4);
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+}
+.div-E2{
+    display: flex;
+    /* justify-content: space-around; */
+    padding: 10px;
+    gap: 15px;
+    background-color: var(--color);
+    border-bottom-left-radius: var(--spacing-xm);
+    border-bottom-right-radius: var(--spacing-xm);
+}
+.div-E2 div{
+    height: 270px;
+    width: 450px;
+    border-radius: var(--spacing-xm);
+}
+.div-E21{
+    background-image: url(./FAN_378x252.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: transform 0.1 ease;
+    box-shadow: 0 0 10px rgba(0, 0, 0,0.1);
+}
+.div-E21:hover{
+    transform: scale(1.04);
+}
+.div-E22{
+    background-image: url(./Washing-Machine_378x252.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: transform 0.3 ease;
+    box-shadow: 0 0 10px rgba(0, 0, 0,0.1);
+}
+.div-E22:hover{
+    transform: scale(1.04);
+}
+.div-E23{
+    background-image: url(./AirCon_378x252.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: transform 0.3 ease;
+    box-shadow: 0 0 10px rgba(0, 0, 0,0.1);
+}
+.div-E23:hover{
+    transform: scale(1.04);
+}
+.div-F1{
+    background-color: var(--color5);
+    color: var(--color4);
+    border-top-left-radius: var(--spacing-xm);
+    border-top-right-radius: var(--spacing-xm);
+    padding: var(--spacing-p);
+}
+.div-F1 p{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: var(--spacing-sm);
+    font-weight: bold;
+}
+.div-F2{
+    display: flex;
+    gap: var(--spacing-m);
+    height: 280px;
+    padding: var(--spacing-p);
+    background-color: var(--color4);
+    border-bottom-left-radius: var(--spacing-xm);
+    border-bottom-right-radius: var(--spacing-xm);
+}
+.div-F2 div{
+    height: 190px;
+    width: 190px;
+}
+.holder3{
+    height: 300px;
+    background-color: var(--color4);
+    /* border: 2px solid red; */
+    box-shadow: 0 0 10px rgba(0, 0, 0,0.1);
+    transition: transform 0.3 ease;
+    object-fit: cover;
+}
+.holder3:hover{
+    transform: scale(1.04);
+}
+
+.div-F21{
+    background-image: url(./hand\ fan.jpg);
+    background-size: cover;
+}
+.div-F22{
+    background-image: url(./synix.jpg);
+    background-size: cover;
+}
+.div-F23{
+    background-image: url(./sonik\ dry.jpg);
+    background-size: cover;
+}
+.div-F24{
+    background-image: url(./synix\ kettle.jpg);
+    background-size: cover;
+}
+.div-F25{
+    background-image: url(./synix\ electric.jpg);
+    background-size: cover;
+}
+.div-F26{
+    background-image: url(./skyrun\ chst\ freeze.jpg);
+    background-size: cover;
+}
+.div-G1{
+    border-top-left-radius: var(--spacing-xm);
+    border-top-right-radius: var(--spacing-xm);
+    background-color: var(--color5);
+    text-align: center;
+    color: var(--color4);
+    font-size: var(--spacing-sm);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: var(--spacing-p);
+    font-weight: bold;
+}
+.flex-column2{
+    display: flex;
+    gap: var(--spacing-p);
+}
+.div-G2{
+    background-color: var(--color4);
+    display: flex;
+    border-bottom-left-radius: var(--spacing-xm);
+    border-bottom-right-radius: var(--spacing-xm);
+    gap: var(--spacing-p);
+    padding: var(--spacing-m);
+}
+.div-G2 div{
+    height: 200px;
+    width: 600px;
+    border-radius: var(--spacing-xm);
+}
+.div-G21{
+    background-image: url(./Bed_size_fridge.png);
+    background-size: cover;
+    box-shadow: 0 0 10px rgba(0, 0, 0,0.1);
+    transition: transform 0.3 ease;
+}
+.div-G21:hover{
+    transform: scale(1.03);
+}
+.div-G22{
+    background-image: url(./Large_freezers.png);
+    background-size: cover;
+    box-shadow: 0 0 10px rgba(0, 0, 0,0.1);
+    transition: transform 0.3 ease;
+}
+.div-G22:hover{
+    transform: scale(1.03);
+}
+.div-G23{
+    background-image: url(./Double_door_fridge.png);
+    background-size: cover;
+    box-shadow: 0 0 10px rgba(0, 0, 0,0.1);
+    transition: transform 0.3 ease;
+}
+.div-G23:hover{
+    transform: scale(1.03);
+}
+.div-G24{
+    background-image: url(./Medium_size_freezers.png);
+    background-size: cover;
+    box-shadow: 0 0 10px rgba(0, 0, 0,0.1);
+    transition: transform 0.3 ease;
+}
+.div-G24:hover{
+    transform: scale(1.03);
+}
+.div-G25{
+    background-image: url(./Single_Door_Fridge.png);
+    background-size: cover;
+    box-shadow: 0 0 10px rgba(0, 0, 0,0.1);
+    transition: transform 0.3 ease;
+}
+.div-G25:hover{
+    transform: scale(1.03);
+}
+.div-G26{
+    background-image: url(./Small_size_freezers.png);
+    background-size: cover;
+    box-shadow: 0 0 10px rgba(0, 0, 0,0.1);
+    transition: transform 0.3ease;
+}
+.div-G26:hover{
+    transform: scale(1.03);
 }
 @media (max-width:428px){
     .span{
@@ -165,6 +455,8 @@ section{
         font-size: var(--spacing-u);
         color: var(--color3);
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        border-top-left-radius: 0%;
+        border-top-right-radius: 0%;
     }
     .div-B{
         background-color: var(--color2);
@@ -182,9 +474,11 @@ section{
         background-color: var(--color5) ;
         gap: 100px;
         color: var(--color4);
-        padding: 4px 10px;
+        padding: 4px var(--spacing-p);
         font-size: var(--spacing-u);
         font-weight: lighter;
+        border-top-left-radius: 0%;
+        border-top-right-radius: 0%;
     }
     .spa img{
         display: none;
@@ -192,7 +486,113 @@ section{
     .spa{
         font-size: var(--spacing-l);
     }
+    .div-C2{
+        overflow: scroll;
+        height: 230px;
+    } 
+    .div-C2 div{
+        height: 150px;
+        width: 150px;
+    }
+    .div-text h5{
+        height: 200px;
+        display: none;
+    }
+    .holder .div-text{
+        height: 60px;
+        width: 150px;
+    }
+    .div-text p{
+        font-size: 0.8rem;
+    }
+    .div-text h3{
+        font-size: 0.7rem;
+        font-weight: light;
+    }
+    .div-D1{
+        border-top-left-radius: 0%;
+        border-top-right-radius: 0%;
+        padding-top: var(--spacing-xm);
+        padding-bottom: var(--spacing-xm);
+    }
+    .div-D2{
+        display: flex;
+        flex-direction: column;
+        background-color: var(--color4);
+        padding: 5px;
+        height: 170px;
+    }
+    .div-D2 div{
+        height: 90px;
+        width: 360px;
+        border-radius: var(--spacing-xm);
+    }
+    .flex-column div{
+        height: 70px;
+        width: 200px;
+    }
+    .div-D1 p{
+        font-size: var(--spacing-m);
+        font-weight: lighter;
+    }
+    .div-E1 p{
+        font-size: var(--spacing-m);
+        font-weight: bold;
+    }
+    .div-F1 p{
+        font-size: var(--spacing-m);
+        font-weight: bold;
+    }
+    .div-F1{
+        border-top-left-radius: 0%;
+        border-top-right-radius: 0%;
+        padding: var();
+    }
+    .div-G1{
+        border-top-left-radius: 0%;
+        border-top-right-radius: 0%;
+        padding: var(--spacing-xm);
+    }
+    .div-F2{
+        overflow: scroll;
+    }
+    .div-E1{
+        border-top-left-radius: 0%;
+        border-top-right-radius: 0%;
+        padding: 7px 0px;
+    }
+    .div-E2{
+        display: flex;
+        justify-content: space-around;
+        background-color: var(--color);
+    }
+    .div-E2 div{
+        height: 200px;
+        width: 400px;
+        border-radius: var(--spacing-xm);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .div-G1 p{
+        font-size: var(--spacing-m);
+    }
+    .div-G2{
+        background-color: var(--color4);
+        display: flex;
+        flex-direction: column;
+        border-bottom-left-radius: var(--spacing-xm);
+        border-bottom-right-radius: var(--spacing-xm);
+        gap: var(--spacing-p);
+        padding: var(--spacing-m);
+    }
+    .div-G2 div{
+        height: 120px;
+        width: 340px;
+        border-radius: var(--spacing-xm);
+    }
+    .flex-column2{
+        display: flex;
+        gap: var(--spacing-p);
+    }
 
 }
-
-
